@@ -25,8 +25,9 @@ const ExpenseForm = (props) => {
       amount: +enteredAmount,
       date: new Date(enteredDate),
     };
-
+    //sending the states to NewExpense.js
     props.onSaveExpenseData(expenseData);
+    //resetting the states:
     setEnteredTitle("");
     setEnteredAmount("");
     setEnteredDate("");
